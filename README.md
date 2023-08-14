@@ -19,7 +19,8 @@ add the script to include <code>igloo.js</code>
 - page2.html <br>
 - page3.html <br>
 - error.html <br>
-5. In the root of your project directory, in <code>index.html</code>, inside the body tag, paste these codes:
+5. Copy the contents of each file form this repo <code>views</code> folder and paste them to your own code correspondingly.
+6. In the root of your project directory, in <code>index.html</code>, inside the body tag, paste these codes:
 ```html
 <br>
 <a href="#index">Homepage</a>
@@ -52,6 +53,4 @@ a{
 }
 </style>
 ```
-6. You are done with the sample template.
-
-# Download setup template
+7. You are done with the sample template.
