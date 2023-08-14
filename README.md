@@ -5,7 +5,7 @@ Single Page Application (SPA) router for static site.
 ```html
 ```
 
-# Setup
+# Manual setup template
 1. In the root of your project directory, create an <code>index.html</code><br>
 2. In the root of your project directory, in <code>index.html</code>, inside the head tag, <br>
 add the script to include <code>igloo.js</code>
@@ -21,15 +21,37 @@ add the script to include <code>igloo.js</code>
 - error.html <br>
 5. In the root of your project directory, in <code>index.html</code>, inside the body tag, paste these codes:
 ```html
+<br>
+<a href="#index">Homepage</a>
+<a href="#page1">Page 1</a>
+<a href="#page2">Page 2</a>
+<a href="#page3">Page 3</a>
+    
 <div id="_igloo"></div>
 
 <script>
 // Igloo router configuration
 $Igloo({
-    folder: "views", // specifies the folder that stores all the pages
-    default_path: "index", // default page, / slash route
-    scope: ["index", "page1", "page2", "page3"], // pages constraints
-    error: "error" // if page visited is outside above scope, render this page
- })
+    folder: "views",
+    default_path: "index",
+    scope: ["index", "page1", "page2", "page3"],
+    error: "error"
+})
 </script>
+
+<style>
+#_igloo{
+    margin-top: 20px;
+}
+a{
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid darkgrey;
+    text-decoration: none;
+    color: black;
+}
+</style>
 ```
+6. You are done with the sample template.
+
+# Download setup template
