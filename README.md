@@ -3,6 +3,7 @@ Single Page Application (SPA) router for static site.
 
 # Install via CDN
 ```html
+<script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/igloo.js"></script>
 ```
 
 # Manual setup template
