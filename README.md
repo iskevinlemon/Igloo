@@ -8,18 +8,18 @@ Single Page Application (SPA) router for static site.
 # Setup
 1. In the root of your project directory, create an <code>index.html</code><br>
 2. In the root of your project directory, in <code>index.html</code>, inside the head tag, <br>
-add the script to include <code>igloo.js</code> <br>
+add the script to include <code>igloo.js</code>
 ```html
 <script src="igloo.js"></script>
 ```
 3. In the root of your project directory, create a <code>views</code> folder<br>
-4. Create these files inside the <code>views</code> folder: <br>
+4. Create these files inside the <code>views</code> folder:
 - index.html <br>
 - page1.html <br>
 - page2.html <br>
 - page3.html <br>
 - error.html <br>
-5. In the root of your project directory, in <code>index.html</code>, inside the body tag, paste these codes: <br>
+5. In the root of your project directory, in <code>index.html</code>, inside the body tag, paste these codes:
 ```html
 <div id="_igloo"></div>
 
