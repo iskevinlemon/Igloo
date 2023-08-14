@@ -1,5 +1,5 @@
 # Igloo
-Single Page Application (SPA) router for static site.
+Single Page Application (SPA) router for static site. [View demo](https://igloo-spa.netlify.app/) 
 
 # Install via CDN
 ```html
