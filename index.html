@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Single Page Application (SPA) router for static site.">
-    <script src="igloo.js"></script>
+    <script src="igloo.1.1.js"></script>
 </head>
 <body>
 
     <br>
-    <a href="#index">Homepage</a>
-    <a href="#page1">Page 1</a>
-    <a href="#page2">Page 2</a>
-    <a href="#page3">Page 3</a>
+    <a route="index">Homepage</a>
+    <a route="page1">Page 1</a>
+    <a route="page2">Page 2</a>
+    <a route="page3">Page 3</a>
+    <a route="page4">Page 4</a>
     
     <!-- DO NOT change the id -->
     <div id="_igloo"></div>
@@ -22,7 +23,7 @@
     $Igloo({
         folder: "views",
         default_path: "index",
-        scope: ["index", "page1", "page2", "page3"],
+        scope: ["index", "page1", "page2", "page3", "page4"],
         error: "error"
     })
     </script>
