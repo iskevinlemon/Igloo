@@ -3,15 +3,15 @@ Single Page Application (SPA) router for static site. [View demo](https://igloo-
 
 # Install via CDN
 ```html
-<script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/igloo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/igloo.1.1.js"></script>
 ```
 
 # Manual setup template
 1. In the root of your project directory, create an <code>index.html</code><br>
 2. In the root of your project directory, in <code>index.html</code>, inside the head tag, <br>
-add the script to include <code>igloo.js</code>
+add the script to include <code>igloo.1.1.js</code>
 ```html
-<script src="igloo.js"></script>
+<script src="igloo.1.1.js"></script>
 ```
 3. In the root of your project directory, create a <code>views</code> folder<br>
 4. Create these files inside the <code>views</code> folder:
@@ -24,10 +24,10 @@ add the script to include <code>igloo.js</code>
 6. In the root of your project directory, in <code>index.html</code>, inside the body tag, paste these codes:
 ```html
 <br>
-<a href="#index">Homepage</a>
-<a href="#page1">Page 1</a>
-<a href="#page2">Page 2</a>
-<a href="#page3">Page 3</a>
+<a route="#index">Homepage</a>
+<a route="#page1">Page 1</a>
+<a route="#page2">Page 2</a>
+<a route="#page3">Page 3</a>
     
 <div id="_igloo"></div>
 
