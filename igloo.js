@@ -2,7 +2,7 @@
 Igloo
 Single Page Application (SPA) router for static site.
 Developed by: Kevin
-https://github.com/kevin-lem0n
+https://github.com/iskevinlemon
 */
 
 (function (window) {

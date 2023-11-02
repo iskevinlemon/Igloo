@@ -2,9 +2,11 @@
 Igloo
 Single Page Application (SPA) router for static site.
 Developed by: Kevin
-https://github.com/kevin-lem0n
+https://github.com/iskevinlemon
 
 version 1.1
+
+Last updated on 02/11/2023
 */
 
 document.addEventListener("click", function (event) {
@@ -23,6 +25,7 @@ document.addEventListener("click", function (event) {
   window.$Igloo = function (config) {
     document.addEventListener("DOMContentLoaded", function() {
      
+      // Ensures that the <a> tag with route attribute has a cursor as pointer
       document.body.innerHTML += `<style>[route]{cursor: pointer !important}</style>`;
 
       var defaultRoute = config.default_path;
@@ -66,9 +69,7 @@ document.addEventListener("click", function (event) {
         else {
           var url = VIEWS_FOLDER + "/" + errScope + ".html";
           fetch(url)
-            .then(function (response) {
-              return response.text();
-            })
+            .then(function (response) {return response.text();})
             .then(function (html) {
               rootDiv.innerHTML = html;
               // console.log(`Current route: ${route}`);
@@ -81,6 +82,7 @@ document.addEventListener("click", function (event) {
             });
         }
       };
+
       window.addEventListener("popstate", function (event) {
         // var currentRoute = window.location.hash.substring(1);
         var currentRoute = window.location.hash.substring(2);
