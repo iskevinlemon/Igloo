@@ -3,7 +3,7 @@ Single Page Application (SPA) router for static site. [View demo](https://igloo-
 
 # Install via CDN
 ```html
-<script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/igloo.1.1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/src/igloo.1.1.2.js"></script>
 ```
 
 # Manual setup template
@@ -29,11 +29,12 @@ add the script to include <code>igloo.1.1.js</code>
 <a route="#page2">Page 2</a>
 <a route="#page3">Page 3</a>
     
-<div id="_igloo"></div>
+<div id="root"></div>
 
 <script>
 // Igloo router configuration
 $Igloo({
+    root: "#root" // this is the id of the div to inject the content to
     folder: "views",
     default_path: "index",
     scope: ["index", "page1", "page2", "page3"],
@@ -42,7 +43,7 @@ $Igloo({
 </script>
 
 <style>
-#_igloo{
+#root{
     margin-top: 20px;
 }
 a{
