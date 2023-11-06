@@ -9,8 +9,8 @@ Single Page Application (SPA) router for static site. [View demo](https://igloo-
 # Pretty URL
 Only available in igloo.2.js and above version
 
-When <code>prettyUrl</code> is set to true, the url will be:
-<code>localhost:3000/#/page1</code> instead of <code>localhost:3000/#/page1</code>
+When <code>prettyUrl</code> is set to true, the url will be: <br/>
+<code>localhost:3000/#/page1</code> instead of <code>localhost:3000/#/page1</code>.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/src/igloo.2.js"></script>
