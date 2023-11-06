@@ -6,6 +6,27 @@ Single Page Application (SPA) router for static site. [View demo](https://igloo-
 <script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/src/igloo.1.1.2.js"></script>
 ```
 
+# Pretty URL
+Only available in igloo.2.js and above version
+
+When <code>prettyUrl<code> is set to true, the url will be:
+<code>localhost:3000/#/page1</code> instead of <code>localhost:3000/#/page1</code>
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/kevin-lem0n/Igloo/src/igloo.2.js"></script>
+<script>
+// Igloo router configuration
+$Igloo({
+    root: "#root" 
+    folder: "views",
+    default_path: "index",
+    scope: ["index", "page1", "page2", "page3"],
+    error: "error"
+    prettyUrl: true;
+})
+</script>
+```
+
 # Manual setup template
 1. In the root of your project directory, create an <code>index.html</code><br>
 2. In the root of your project directory, in <code>index.html</code>, inside the head tag, <br>
@@ -39,6 +60,7 @@ $Igloo({
     default_path: "index",
     scope: ["index", "page1", "page2", "page3"],
     error: "error"
+    prettyUrl: true;
 })
 </script>
 
