@@ -69,11 +69,9 @@ $DOC.addEventListener("click", function (event) {
             .then(function (response) {return response.text();})
             .then(function (html) {
               rootDiv.innerHTML = `${html}`;
-
               if (changeURL) {
                 history.pushState({}, "", route);
               }
-
             })
             .catch(function (error) {
               console.error("Error fetching page: ", error);
